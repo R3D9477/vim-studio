@@ -1,0 +1,4 @@
+-main VimStudio%templMain%Client
+-cp Source
+-cp ../../../vim-studio/sys/src/VimStudioSys/Source
+-neko Export/%os%%cpuArch%/neko/bin/VimStudioClient.n

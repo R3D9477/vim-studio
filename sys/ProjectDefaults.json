@@ -1,0 +1,21 @@
+{
+	"vimStudio":
+	{
+		"projectType": "",
+		"sortByName": 1,
+		"sortByType": 1,
+		"addHidden": false,
+		"treeBarWidth": 40,
+		"charSubitem": "	",
+		"charProject_l": " ⦑ ",
+		"charProject_r": " ⦒",
+		"charDirectory_l": "⦑ ",
+		"charDirectory_r": " ⦒",
+		"charFile_l": " ",
+		"charFile_r": "",
+		"charLink_l": " ",
+		"charLink_r": "",
+		"charNotFound_l": " ",
+		"charNotFound_r": ""
+	}
+}

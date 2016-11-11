@@ -1,0 +1,11 @@
+{
+	"text": "%templMain% ►",
+	"id": "%templMain%_menu",
+	"nw_id": "next",
+	"items": [
+		{ "text": "%templMain%", "id": "%templMain%_item" },
+		{},
+		{ "text": "Back ◄", "nw_id": "back" },
+		{ "text": "Close", "nw_id": "close" }
+	]
+}

@@ -1,0 +1,3 @@
+-main Main
+-cp Source
+-neko Export/%os%%cpuArch%/neko/bin/init.n

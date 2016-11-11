@@ -1,0 +1,61 @@
+{
+	"title": "Menu Project",
+	"id": "vRide_project",
+	"items": [
+		{ "text": "Fold / Unfold", "id": "vRide_fold_unfold" },
+		{ "text": "Fold / Unfold All", "id": "vRide_fold_unfold_all" },
+		{},
+		{ "text": "Refresh", "id": "vRide_refresh_project" },
+		{ "text": "Update", "id": "vRide_update_project" },
+		{},
+		{ "text": "Settings", "id": "vRide_project_settings" },
+		{},
+		{ "text": "New", "id": "vRide_new_project" },
+		{ "text": "Open", "id": "vRide_open_project" },
+		{ "text": "Close", "id": "vRide_close_project" },
+		{ "text": "Delete ", "id": "vRide_delete_project" },
+		{},
+		{ "text": "Open Directory in External Programm", "id": "vRide_exec_parent_dir" },
+		{},
+		{ "text": "Rename ", "id": "vRide_rename" },
+		{},
+		{ 
+			"text": "Insert ►",
+			"id": "vRide_panels",
+			"nw_id": "next",
+			"items": [
+				{ "text": "Paste ", "id": "vRide_paste" },
+				{},
+				{ "text": "New Folder", "id": "vRide_new_folder" },
+				{ "text": "New File", "id": "vRide_new_file" },
+				{},
+				{ "text": "File", "id": "vRide_ins_file" },
+				{ "text": "Link to File", "id": "vRide_ins_file_link" },
+				{ "text": "Directory", "id": "vRide_ins_dir" },
+				{ "text": "Link to Directory", "id": "vRide_ins_dir_link" },
+				{ "text": "Directory (Recursively)", "id": "vRide_ins_dir_rec" },
+				{ "text": "Link to Directory (Recursively)", "id": "vRide_ins_link_dir_rec" },
+				{},
+				{ "text": "Back ◄", "nw_id": "back" },
+				{ "text": "Close", "nw_id": "close" }
+			]
+		},
+		{},
+		{ "text": "Search File", "id": "vRide_search_text" },
+		{ "text": "Search And Replace In Files", "id": "vRide_search_and_replace_in_files" },
+		{},
+		{
+			"text": "Panels ►",
+			"id": "vRide_panels",
+			"nw_id": "next",
+			"items": [
+				{ "text": "Toogle Side Panel", "id": "vRide_toogle_side_panel" },
+				{},
+				{ "text": "Back ◄", "nw_id": "back" },
+				{ "text": "Close", "nw_id": "close" }
+			]
+		},
+		{},
+		{ "text": "Close", "nw_id": "close" }
+	]
+}

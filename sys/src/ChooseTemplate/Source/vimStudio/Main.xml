@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Floating widthPt="100" heightPt="100">
+	<VBox
+		widthPt="100"
+		heightPt="100"
+		skin:Paint-color="0xC0C0C0"
+		skin:Paint-border="1"
+		skin:Paint-borderColor="0x000000"
+		layout:Row-rows="[30, -1, 100, 30, 30]">
+		<Text
+			text="'Templates list:'"
+			widthPt="100"
+			heightPt="100"
+			align="'middle'"
+			format.align="LEFT"
+			skin:Paint-color="0xC0C0C0"
+			skin:Paint-border="1"
+			skin:Paint-borderColor="0x000000" />
+		<Scroll
+			widthPt="100"
+			heightPt="100"
+			skin:Paint-color="0xC0C0C0"
+			skin:Paint-border="1"
+			skin:Paint-borderColor="0x000000"
+			vBar-slider-skin:Paint-color="0x002200"
+			hBar-slider-skin:Paint-color="0x002200"
+			hBar-skin:Paint-color="0x777777"
+			vBar-skin:Paint-color="0x777777"
+			vBar-visible="true"
+			hBar-visible="false">
+			<VBox
+				name="'templatesList'"
+				widthPt="100"
+				heightPt="100"
+				align="'top'"
+				skin:Paint-color="0xC0C0C0"
+				skin:Paint-border="1"
+				skin:Paint-borderColor="0x000000" />
+		</Scroll>
+		<Scroll
+			widthPt="100"
+			heightPt="100"
+			skin:Paint-color="0xC0C0C0"
+			skin:Paint-border="1"
+			skin:Paint-borderColor="0x000000"
+			vBar-slider-skin:Paint-color="0x002200"
+			hBar-slider-skin:Paint-color="0x002200"
+			hBar-skin:Paint-color="0x777777"
+			vBar-skin:Paint-color="0x777777"
+			vBar-visible="true"
+			hBar-visible="false">
+			<Text
+				name="'templateInfo'"
+				widthPt="100"
+				heightPt="100"
+				align="'top'"
+				skin:Paint-color="0xC0C0C0"
+				skin:Paint-border="1"
+				skin:Paint-borderColor="0x000000" />
+		</Scroll>
+		<HBox
+			widthPt="100"
+			heightPt="100"
+			skin:Paint-color="0xC0C0C0"
+			skin:Paint-border="1"
+			skin:Paint-borderColor="0x000000"
+			layout:Column-cols="[100, -1]">
+			<Text
+				text="'Selected:'"
+				widthPt="100"
+				heightPt="100"
+				align="'middle'"
+				format.align="LEFT"
+				skin:Paint-color="0xC0C0C0"
+				skin:Paint-border="1"
+				skin:Paint-borderColor="0x000000" />
+			<Text
+				name="'selectedTemplate'"
+				text="'none'"
+				widthPt="100"
+				heightPt="100"
+				align="'middle'"
+				format.align="LEFT"
+				skin:Paint-color="0xC0C0C0"
+				skin:Paint-border="1"
+				skin:Paint-borderColor="0x000000" />
+		</HBox>
+		<HBox
+			widthPt="100"
+			heightPt="100"
+			skin:Paint-color="0xC0C0C0"
+			skin:Paint-border="1"
+			skin:Paint-borderColor="0x000000"
+			layout:Column-cols="[-1, 45, 65]">
+			<Widget />
+			<Button
+				name="'okBtn'"
+				heightPt="100"
+				tabEnabled="false"
+				label-visible="true"
+				text="'Ok'"
+				skin:Paint-color="0xC0C0C0"
+				skin:Paint-border="1"
+				skin:Paint-borderColor="0x000000" />
+			<Button
+				name="'cancelBtn'"
+				heightPt="100"
+				tabEnabled="false"
+				label-visible="true"
+				text="'Cancel'"
+				skin:Paint-color="0xC0C0C0"
+				skin:Paint-border="1"
+				skin:Paint-borderColor="0x000000" />
+		</HBox>
+	</VBox>
+</Floating>

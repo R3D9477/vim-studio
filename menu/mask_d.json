@@ -1,0 +1,74 @@
+{
+	"title": "Menu Directory",
+	"id": "vimStudio_mask_d",
+	"items": [
+		{ "text": "Fold / Unfold", "id": "vimStudio_fold_unfold" },
+		{ "text": "Fold / Unfold All", "id": "vimStudio_fold_unfold_all" },
+		{},
+		{ "text": "Open in External Programm", "id": "vimStudio_exec" },
+		{ "text": "Open Parent in External Programm", "id": "vimStudio_exec_parent_dir" },
+		{},
+		{ "text": "Rename ", "id": "vimStudio_rename" },
+		{},
+		{ "text": "Cut ", "id": "vimStudio_cut" },
+		{ "text": "Copy ", "id": "vimStudio_copy" },
+		{},
+		{ "text": "Delete ", "id": "vimStudio_delete_file" },
+		{},
+		{ 
+			"text": "Insert ►",
+			"id": "vimStudio_panels_menu",
+			"nw_id": "next",
+			"items": [
+				{ "text": "Paste ", "id": "vimStudio_paste" },
+				{},
+				{ "text": "New Item", "id": "vimStudio_new_file" },
+				{},
+				{ "text": "File", "id": "vimStudio_ins_file" },
+				{ "text": "Directory", "id": "vimStudio_ins_dir" },
+				{},
+				{ "text": "Link to File", "id": "vimStudio_ins_file_link" },
+				{ "text": "Link to Directory", "id": "vimStudio_ins_dir_link" },
+				{},
+				{ "text": "Back ◄", "nw_id": "back" },
+				{ "text": "Close", "nw_id": "close" }
+			]
+		},
+		{},
+		{ "text": "Search File", "id": "vimStudio_search_and_replace" },
+		{ "text": "Search And Replace In Files", "id": "vimStudio_search_and_replace_in_files" },
+		{},
+		{
+			"text": "Panels ►",
+			"id": "vimStudio_panels",
+			"nw_id": "next",
+			"items": [
+				{ "text": "Toogle Side Panel", "id": "vimStudio_toogle_side_panel" },
+				{},
+				{ "text": "Back ◄", "nw_id": "back" },
+				{ "text": "Close", "nw_id": "close" }
+			]
+		},
+		{
+			"text": " Project ►",
+			"id": "vimStudio_project",
+			"nw_id": "next",
+			"items": [
+				{ "text": "Refresh", "id": "vimStudio_refresh_project" },
+				{ "text": "Update", "id": "vimStudio_update_project" },
+				{},
+				{ "text": "Settings", "id": "vimStudio_project_settings" },
+				{},
+				{ "text": "New", "id": "vimStudio_new_project" },
+				{ "text": "Open", "id": "vimStudio_open_project" },
+				{ "text": "Close", "id": "vimStudio_close_project" },
+				{ "text": "Delete ", "id": "vimStudio_delete_project" },
+				{},
+				{ "text": "Back ◄", "nw_id": "back" },
+				{ "text": "Close", "nw_id": "close" }
+			]
+		},
+		{},
+		{ "text": "Close", "nw_id": "close" }
+	]
+}

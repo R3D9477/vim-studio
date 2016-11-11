@@ -1,0 +1,3 @@
+Project of vim-studio's integration module.
+By default it contains handlers for all events of vim-studio, all integration function (for event-handlers, menus and templates).
+Also contains example of menu, skeleton of external programm for more ability (named VimStudioClient) and skeletons of templates for new file and new project.

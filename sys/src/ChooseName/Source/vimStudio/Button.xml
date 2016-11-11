@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Button
+	height="30"
+	widthPt="100"
+	tabEnabled="false"
+	label-visible="true"
+	skin:Paint-color="0xC0C0C0"
+	skin:Paint-border="1"
+	skin:Paint-borderColor="0x000000" />

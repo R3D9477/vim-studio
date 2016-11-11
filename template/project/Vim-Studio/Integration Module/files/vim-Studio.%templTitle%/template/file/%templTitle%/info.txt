@@ -1,0 +1,1 @@
+Information of template of file for vim-studio integration module named %main%.

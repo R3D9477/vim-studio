@@ -1,0 +1,18 @@
+-main vimStudio.VimStudioClient
+-cp Source
+-lib systools
+-lib hxTypeExt
+-lib hxTree
+-neko Export/linux64/neko/bin/VimStudioClient.n
+
+--next
+
+-main vimStudio.VimStudioServer
+-cp Source
+-lib hxTypeExt
+-lib hxTree
+-neko Export/linux64/neko/bin/VimStudioServer.n
+
+--next
+
+-cmd cp -r Assets/* Export/linux64/neko/bin/

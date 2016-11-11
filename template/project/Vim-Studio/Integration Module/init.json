@@ -1,0 +1,13 @@
+{
+	"generic": {
+		"templateVars": {
+			"title": "%templTitle%",
+			"main": "%templMain%",
+			"osFamily": "%-%",
+			"cpuArch": "%-%",
+			"currWorkDir": "%-%",
+			"templateDir": "%-%",
+			"projectPath": "%-%"
+		}
+	}
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<meta title="SearchAndReplace" package="vimStudio" version="1.0.0" company="" />
+	<app main="vimStudio.Main" path="Export" file="SearchAndReplace" />
+	
+	<window width="350" height="280" resizable="true" background="0xFFFFFF" fps="60" />
+	<window width="0" height="0" if="html5 || flash" />
+	
+	<source path="Source" />
+	<source path="Export/linux64/neko/haxe" />
+	
+	<haxelib name="openfl" />
+	<haxelib name="actuate" />
+	<haxelib name="stablexui" />
+</project>

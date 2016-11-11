@@ -1,0 +1,70 @@
+{
+	"generic": {
+		"templateVars": {
+			"title": "%title%",
+			"main": "%main%",
+			"osFamily": "%os%",
+			"cpuArch": "%cpuArch%",
+			"currWorkDir": "%cwd%",
+			"templateDir": "%td%",
+			"projectPath": "%proj%"
+		}
+	},
+	"platforms": {
+		"all": {
+			"before": [
+				{ "cmd": "neko", "args": ["%td%/init.n"], "checkResult": true }
+			],
+			"settings": [
+				
+			],
+			"after": [
+				
+			]
+		},
+		"bsd": {
+			"before": [
+				
+			],
+			"settings": [
+				
+			],
+			"after": [
+				
+			]
+		},
+		"linux": {
+			"before": [
+				
+			],
+			"settings": [
+				
+			],
+			"after": [
+				
+			]
+		},
+		"mac": {
+			"before": [
+				
+			],
+			"settings": [
+				
+			],
+			"after": [
+				
+			]
+		},
+		"windows": {
+			"before": [
+				
+			],
+			"settings": [
+				
+			],
+			"after": [
+				
+			]
+		}
+	}
+}

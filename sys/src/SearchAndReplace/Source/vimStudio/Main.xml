@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Floating widthPt="100" heightPt="100">
+	<VBox
+		widthPt="100"
+		heightPt="100"
+		skin:Paint-color="0xC0C0C0"
+		skin:Paint-border="1"
+		skin:Paint-borderColor="0x000000"
+		layout:Row-rows="[30, -1, 30, 30, -1, 30]">
+		<Text
+			widthPt="100"
+			heightPt="100"
+			text="'Search:'"
+			format.align="LEFT"
+			align="'middle'"
+			skin:Paint-color="0xC0C0C0"
+			skin:Paint-border="1"
+			skin:Paint-borderColor="0x000000" />
+		<InputText
+			name="'searchInp'"
+			widthPt="100"
+			heightPt="100"
+			text="''"
+			format.align="LEFT"
+			align="'top'"
+			skin:Paint-color="0xC0C0C0"
+			skin:Paint-border="1"
+			skin:Paint-borderColor="0x000000" />
+		<Checkbox
+			name="'matchCaseCb'"
+			selected="false"
+			states-down-text="'[+] match case'"
+			states-up-text="'[-] match case'"
+			format.align="LEFT"
+			align="'middle'"
+			skin:Paint-color="0xC0C0C0"
+			skin:Paint-border="1"
+			skin:Paint-borderColor="0x000000" />
+		<Checkbox
+			name="'replaceCb'"
+			selected="false"
+			states-down-text="'[+] and replace with:'"
+			states-up-text="'[-] and replace with:'"
+			format.align="LEFT"
+			align="'middle'"
+			skin:Paint-color="0xC0C0C0"
+			skin:Paint-border="1"
+			skin:Paint-borderColor="0x000000" />
+		<InputText
+			name="'replaceWithInp'"
+			widthPt="100"
+			heightPt="100"
+			text="''"
+			format.align="LEFT"
+			align="'top'"
+			skin:Paint-color="0xC0C0C0"
+			skin:Paint-border="1"
+			skin:Paint-borderColor="0x000000" />
+		<HBox
+			widthPt="100"
+			heightPt="100"
+			skin:Paint-color="0xC0C0C0"
+			skin:Paint-border="1"
+			skin:Paint-borderColor="0x000000"
+			layout:Column-cols="[-1, 45, 65]">
+			<Widget />
+			<Button
+				name="'okBtn'"
+				heightPt="100"
+				tabEnabled="false"
+				label-visible="true"
+				text="'Ok'"
+				skin:Paint-color="0xC0C0C0"
+				skin:Paint-border="1"
+				skin:Paint-borderColor="0x000000" />
+			<Button
+				name="'cancelBtn'"
+				heightPt="100"
+				tabEnabled="false"
+				label-visible="true"
+				text="'Cancel'"
+				skin:Paint-color="0xC0C0C0"
+				skin:Paint-border="1"
+				skin:Paint-borderColor="0x000000" />
+		</HBox>
+	</VBox>
+</Floating>
