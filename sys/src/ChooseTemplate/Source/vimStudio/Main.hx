@@ -71,10 +71,10 @@ class Main extends Sprite {
 							var templateSelector:Button = new Button();
 							templateSelector.text = file.replace(templateSrc, "");
 							templateSelector.onPress = function (e:MouseEvent) {
-								selectedTemplate.text = templateSelector.text;
 								this.selTemplPath = file;
-								if (FileSystem.exists(Path.join([file, "info.txt"])))
-									templateInfo.text = File.getContent(Path.join([file, "info.txt"])); 
+								selectedTemplate.text = templateSelector.text;
+								
+								templateInfo.text = FileSystem.exists(Path.join([file, "info.txt"])) ? File.getContent(Path.join([file, "info.txt"])) : "";
 							}
 							templatesList.addChild(templateSelector);
 						}
