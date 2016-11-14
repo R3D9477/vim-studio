@@ -7,8 +7,7 @@ import sys.net.Socket;
 import sys.FileSystem;
 import systools.Dialogs;
 
-import hxTree.ProjectCore;
-import hxTree.Config;
+import rn.dataTree.projectTree.*;
 
 using StringTools;
 

@@ -15,14 +15,13 @@ import haxe.io.BytesInput;
 	import cpp.net.ThreadServer;
 #end
 
-import hxTypeExt.FileSystemHelper;
-
 import vimStudio.Debug;
-import hxTree.Config;
-import hxTree.ProjectCore;
+import rn.dataTree.projectTree.*;
+
+import rn.typext.hlp.FileSystemHelper;
 
 using StringTools;
-using hxTypeExt.StringExtender;
+using rn.typext.ext.StringExtender;
 
 typedef Client = {
 	var socket : Socket; 
@@ -114,9 +113,9 @@ class VimStudioServer extends ThreadServer<Client, String> {
 						response = tree.getItemPathAt(Std.parseInt(request[3]));
 					case "get_type_by_index":
 						switch (tree.getItemTypeAt(Std.parseInt(request[3]))) {
-							case ProjectItemType.ProjectItem: response = "p";
-							case ProjectItemType.DirectoryItem: response = "d";
-							case ProjectItemType.FileItem: response = "f";
+							case ProjectTreeItemType.ProjectItem: response = "p";
+							case ProjectTreeItemType.DirectoryItem: response = "d";
+							case ProjectTreeItemType.FileItem: response = "f";
 							default:
 						}
 					case "get_childs_count_by_index":

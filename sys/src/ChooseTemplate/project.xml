@@ -12,6 +12,5 @@
 	<haxelib name="openfl" />
 	<haxelib name="actuate" />
 	<haxelib name="stablexui" />
-	
-	<haxelib name="hxTypeExt" />
+	<haxelib name="typext" />
 </project>
