@@ -83,8 +83,8 @@ class Main extends Sprite {
 			}
 		}
 		
-		this.stage.window.width = cast(ul.w, Int);
-		this.stage.window.height = cast(ul.h, Int);
+		this.stage.window.width = Std.int(ul.w);
+		this.stage.window.height = Std.int(ul.h);
 	}
 	
 	public function new () {
@@ -106,13 +106,13 @@ class Main extends Sprite {
 		UIBuilder.init();
 		var window:Floating = UIBuilder.buildFn("vimStudio/Main.xml")();
 		
-		ul = cast(window.getChild("ul"), VBox);
+		this.ul = cast(window.getChild("ul"), VBox);
 		
 		var ext_menu:Array<String> = Sys.args();
 		var menu:Dynamic = Json.parse(File.getContent(Path.join(["..", "menu", ext_menu.shift() + ".json"])));
 		
-		setParentRecusively(ext_menu, menu);
-		showItemsList(menu);
+		this.setParentRecusively(ext_menu, menu);
+		this.showItemsList(menu);
 		
 		window.show();
 	}

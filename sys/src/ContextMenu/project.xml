@@ -3,7 +3,7 @@
 	<meta title="ContextMenu" package="vimStudio" version="1.0.0" company="" />
 	<app main="vimStudio.Main" path="Export" file="ContextMenu" />
 	
-	<window width="350" height="350" resizable="false" background="0xFFFFFF" fps="60" />
+	<window width="0" height="0" borderless="true" resizable="true" background="0xFFFFFF" fps="60" />
 	<window width="0" height="0" if="html5 || flash" />
 	
 	<source path="Source" />
