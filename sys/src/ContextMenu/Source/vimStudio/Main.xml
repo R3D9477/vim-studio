@@ -1,11 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Floating widthPt="100" heightPt="100">
-	<VBox
-		name="'ul'"
-		widthPt="100"
-		heightPt="100"
-		skin:Paint-color="0xC0C0C0"
-		skin:Paint-border="1"
-		skin:Paint-borderColor="0x000000">
-	</VBox>
+	<VBox name="'ul'"/>
 </Floating>

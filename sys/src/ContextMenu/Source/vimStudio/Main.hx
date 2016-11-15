@@ -49,7 +49,7 @@ class Main extends Sprite {
 			setParentRecusively(ext_menu, n);
 		}
 	}
-
+	
 	function showItemsList (currItem:Dynamic) : Void {
 		if (currItem.items == null)
 			return;
@@ -83,7 +83,8 @@ class Main extends Sprite {
 			}
 		}
 		
-		// set window size
+		this.stage.window.width = cast(ul.w, Int);
+		this.stage.window.height = cast(ul.h, Int);
 	}
 	
 	public function new () {
@@ -94,7 +95,7 @@ class Main extends Sprite {
 				Sys.executablePath()
 			#end
 		)));
-
+		
 		super();
 		
 		Lib.current.stage.align = StageAlign.TOP_LEFT;
@@ -104,7 +105,7 @@ class Main extends Sprite {
 		
 		UIBuilder.init();
 		var window:Floating = UIBuilder.buildFn("vimStudio/Main.xml")();
-
+		
 		ul = cast(window.getChild("ul"), VBox);
 		
 		var ext_menu:Array<String> = Sys.args();
