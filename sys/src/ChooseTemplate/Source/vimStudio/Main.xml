@@ -12,28 +12,21 @@
 			widthPt="100"
 			heightPt="100"
 			align="'middle'"
-			format.align="LEFT"
-			skin:Paint-color="0xC0C0C0"
-			skin:Paint-border="1"
-			skin:Paint-borderColor="0x000000" />
+			format.align="'left'"
+			skin:Paint-color="0xC0C0C0"/>
 		<Scroll
 			widthPt="100"
 			heightPt="100"
 			skin:Paint-color="0xC0C0C0"
-			skin:Paint-border="1"
-			skin:Paint-borderColor="0x000000"
 			vBar-slider-skin:Paint-color="0x002200"
 			hBar-slider-skin:Paint-color="0x002200"
 			hBar-skin:Paint-color="0x777777"
 			vBar-skin:Paint-color="0x777777"
 			vBar-visible="true"
-			hBar-visible="false">
+			hBar-visible="true">
 			<VBox
 				name="'templatesList'"
-				align="'top'"
-				skin:Paint-color="0xC0C0C0"
-				skin:Paint-border="1"
-				skin:Paint-borderColor="0x000000" />
+				layout:Row-hAlign="'left'"/>
 		</Scroll>
 		<Scroll
 			widthPt="100"
@@ -49,12 +42,9 @@
 			hBar-visible="false">
 			<Text
 				name="'templateInfo'"
+				align="'left,top'"
 				widthPt="100"
-				heightPt="100"
-				align="'top'"
-				skin:Paint-color="0xC0C0C0"
-				skin:Paint-border="1"
-				skin:Paint-borderColor="0x000000" />
+				label-wordWrap="true"/>
 		</Scroll>
 		<HBox
 			widthPt="100"

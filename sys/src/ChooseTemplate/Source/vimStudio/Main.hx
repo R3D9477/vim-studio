@@ -10,6 +10,8 @@ import ru.stablex.ui.widgets.Button;
 import ru.stablex.ui.widgets.Floating;
 import ru.stablex.ui.widgets.VBox;
 import ru.stablex.ui.widgets.Text;
+import ru.stablex.ui.layouts.Row;
+import ru.stablex.ui.skins.Paint;
 
 import haxe.Json;
 import haxe.io.Path;
@@ -55,11 +57,13 @@ class Main extends Sprite {
 		cast(window.getChild("okBtn"), Button).onPress = function (e:MouseEvent) System.exit(1);
 		cast(window.getChild("cancelBtn"), Button).onPress = function (e:MouseEvent) System.exit(0);
 		
-		var templatesList:VBox = cast(window.getChild("templatesList"), VBox);
 		var templateInfo:Text = cast(window.getChild("templateInfo"), Text);
 		var selectedTemplate:Text = cast(window.getChild("selectedTemplate"), Text);
 		
 		var lastTemplatePath:String = "";
+		
+		var templatesList:VBox = cast(window.getChild("templatesList"), VBox);
+		cast(templatesList.layout, Row).rows = new Array<Float>();
 		
 		for (templateSrc in Sys.args())
 			if (FileSystem.exists(templateSrc))
@@ -70,15 +74,20 @@ class Main extends Sprite {
 							
 							var templateSelector:Button = new Button();
 							templateSelector.text = file.replace(templateSrc, "");
+							
 							templateSelector.onPress = function (e:MouseEvent) {
 								this.selTemplPath = file;
 								selectedTemplate.text = templateSelector.text;
 								
 								templateInfo.text = FileSystem.exists(Path.join([file, "info.txt"])) ? File.getContent(Path.join([file, "info.txt"])) : "";
 							}
+							
+							cast(templatesList.layout, Row).rows.push(templateSelector.h);
 							templatesList.addChild(templateSelector);
 						}
 				);
+		
+		templatesList.refresh();
 		
 		Lib.current.stage.application.window.onResize.add(function (width:Int, height:Int) {
 			configData.width = width;
