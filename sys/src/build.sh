@@ -1,5 +1,8 @@
 #!/bin/bash
 
+export OUTDIR_SRC="Export/neko/obj/"
+export OUTDIR_DST="../../"
+
 rm ../*.n
 rm ../*.json
 
@@ -12,8 +15,8 @@ cd VimStudioSys
 rm -rf Export
 haxe build.hxml
 
-cp Export/linux64/neko/bin/*.n ../../
-cp Export/linux64/neko/bin/*.json ../../
+cp $OUTDIR_SRC*".n" $OUTDIR_DST
+cp $OUTDIR_SRC*".json" $OUTDIR_DST
 
 ################################################################################
 echo "   done." ################################################################
@@ -26,7 +29,7 @@ cd ../ChooseName
 rm -rf Export
 lime build neko
 
-cp Export/linux64/neko/release/obj/ApplicationMain.n ../../ChooseName.n
+cp $OUTDIR_SRC"ApplicationMain.n" $OUTDIR_DST"ChooseName.n"
 
 ################################################################################
 echo "   done." ################################################################
@@ -39,7 +42,7 @@ cd ../SearchAndReplace
 rm -rf Export
 lime build neko
 
-cp Export/linux64/neko/release/obj/ApplicationMain.n ../../SearchAndReplace.n
+cp $OUTDIR_SRC"ApplicationMain.n" $OUTDIR_DST"SearchAndReplace.n"
 
 ################################################################################
 echo "   done." ################################################################
@@ -52,7 +55,7 @@ cd ../ChooseTemplate
 rm -rf Export
 lime build neko
 
-cp Export/linux64/neko/release/obj/ApplicationMain.n ../../ChooseTemplate.n
+cp $OUTDIR_SRC"ApplicationMain.n" $OUTDIR_DST"ChooseTemplate.n"
 
 ################################################################################
 echo "   done." ################################################################
@@ -65,7 +68,7 @@ cd ../ContextMenu
 rm -rf Export
 lime build neko
 
-cp Export/linux64/neko/release/obj/ApplicationMain.n ../../ContextMenu.n
+cp $OUTDIR_SRC"ApplicationMain.n" $OUTDIR_DST"ContextMenu.n"
 
 ################################################################################
 echo "   done." ################################################################

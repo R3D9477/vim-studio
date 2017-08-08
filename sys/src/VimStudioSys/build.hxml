@@ -3,7 +3,7 @@
 -lib systools
 -lib typext
 -lib dataTree
--neko Export/linux64/neko/bin/VimStudioClient.n
+-neko Export/neko/obj/VimStudioClient.n
 
 --next
 
@@ -11,8 +11,8 @@
 -cp Source
 -lib typext
 -lib dataTree
--neko Export/linux64/neko/bin/VimStudioServer.n
+-neko Export/neko/obj/VimStudioServer.n
 
 --next
 
--cmd cp -r Assets/* Export/linux64/neko/bin/
+-cmd cp -r Assets/* Export/neko/obj/
