@@ -1,12 +1,15 @@
 #!/bin/bash
 
-rm ../*.n
+export OUTDIR_SRC="Export/neko/obj/"
+export OUTDIR_DST="../"
+
+rm ../init.n
 
 ################################################################################
-# VimStudioClient ##############################################################
+echo "> building: VimStudioClient" #############################################
 ################################################################################
 
 rm -rf Export
 haxe build.hxml
 
-cp Export/%os%%cpuArch%/neko/bin/*.n ../
+cp $OUTDIR_SRC"init.n" $OUTDIR_DST
